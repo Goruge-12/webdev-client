@@ -53,9 +53,23 @@ export default function HighlightedParagraphLab() {
         borderRadius="0px"
       />
 
-      {/* On my own goes here */}
+      {/* On my own */}
+      <HighlightedParagraph
+        text="I work in aerospace and enjoy being part of an industry where technology and engineering come together."
+        backgroundColor="lightblue"
+        borderColor="darkblue"
+        borderWidth={3}
+        borderRadius={10}
+      />
 
-      {/* With AI goes here */}
+      {/* With AI */}
+      <HighlightedParagraph
+        text="Modern web applications combine design, programming, and technology to create interactive experiences."
+        backgroundColor="lightgreen"
+        borderColor="green"
+        borderWidth={3}
+        borderRadius={12}
+      />
     </div>
   );
 }
