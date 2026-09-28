@@ -20,7 +20,7 @@ export default function Signin() {
       />
       <br />
 
-      <Link href="/account/profile" id="wd-signin-btn">
+      <Link href="/dashboard" id="wd-signin-btn">
         Sign in
       </Link>
       <br />
