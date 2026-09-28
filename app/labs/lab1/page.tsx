@@ -6,6 +6,7 @@ import Tables from "./Tables";
 import Forms from "./forms/Forms";
 import HighlightedParagraph from "./HighlightedParagraph";
 import HighlightedBox from "./HighlightedBox";
+import AnchorTag from "./AnchorTag";
 
 
 export default function Lab1() {
@@ -22,6 +23,7 @@ export default function Lab1() {
       <Forms />
       <HighlightedParagraph />
       <HighlightedBox />
+      <AnchorTag />
     </div>
   );
 }
