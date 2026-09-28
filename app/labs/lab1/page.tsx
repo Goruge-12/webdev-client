@@ -5,6 +5,8 @@ import ParagraphTag from "./ParagraphTag";
 import Tables from "./Tables";
 import Forms from "./forms/Forms";
 import HighlightedParagraph from "./HighlightedParagraph";
+import HighlightedBox from "./HighlightedBox";
+
 
 export default function Lab1() {
   return (
@@ -19,6 +21,7 @@ export default function Lab1() {
       <Images />
       <Forms />
       <HighlightedParagraph />
+      <HighlightedBox />
     </div>
   );
 }
