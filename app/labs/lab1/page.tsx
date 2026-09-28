@@ -3,6 +3,7 @@ import Images from "./Images";
 import ListTags from "./ListTags";
 import ParagraphTag from "./ParagraphTag";
 import Tables from "./Tables";
+import Forms from "./forms/Forms";
 
 export default function Lab1() {
   return (
@@ -15,6 +16,7 @@ export default function Lab1() {
       <ListTags />
       <Tables />
       <Images />
+      <Forms />
     </div>
   );
 }
