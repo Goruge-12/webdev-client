@@ -8,7 +8,7 @@ export default function ParagraphTag() {
         vertical spaces to make the text easier to read. Browsers ignore
         vertical white spaces and render all the text as one single set of
         sentences. To force the browser to add vertical spacing, wrap the
-        paragraphs you want to separate with the paragraph tag.
+        paragraphs you want to separate with the paragraph tag
       </p>
 
       <p id="wd-p-2">
@@ -18,8 +18,9 @@ export default function ParagraphTag() {
 
       <p id="wd-p-3">
         This is the second paragraph. Even though there is a deliberate white
-        gap between the paragraph above and this paragraph, by default browsers
-        render them as one contiguous piece of text.
+        gap between the paragraph above and this paragraph, by default
+        browsers render them as one contiguous piece of text as shown here on
+        the right.
       </p>
 
       <p id="wd-p-4">
@@ -27,7 +28,7 @@ export default function ParagraphTag() {
         tag to tell browsers to render the gaps.
       </p>
 
-      {/* ON YOUR OWN */}
+      {/* On my own */}
       <p id="wd-p-your-1">
         I earned my bachelor's degree in Computer Science from Salem State
         University and am continuing my education in the Master of Science in
@@ -40,7 +41,7 @@ export default function ParagraphTag() {
         working in the aerospace industry.
       </p>
 
-      {/* WITH AI */}
+      {/* With AI */}
       <p id="wd-ai-p">
         Wrapping text in paragraph tags creates vertical spacing because
         browsers render each paragraph as a separate block of content with
