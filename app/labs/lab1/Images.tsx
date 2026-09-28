@@ -31,7 +31,7 @@ export default function Images() {
       <br />
       <img
         id="wd-your-image"
-        src="/images/USMC.jpg"
+        src="/images/USMC.jpeg"
         width="300px"
         alt="United States Marine Corps"
       />
