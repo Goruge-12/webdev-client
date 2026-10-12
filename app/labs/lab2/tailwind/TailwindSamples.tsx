@@ -174,14 +174,19 @@ export default function TailwindSamples() {
         </div>
 
         <h4>Responsive Card</h4>
-        <div className="max-w-sm rounded-lg border bg-white p-4 text-black shadow-md md:max-w-lg md:p-6">
-          <h5 className="text-xl font-bold">
-            Course Card
-          </h5>
-          <p className="mt-2">
-            This card changes its size and padding depending on
-            the screen width.
-          </p>
+        <div className="flex flex-col rounded-lg bg-gray-200 p-4 text-black md:flex-row md:items-center md:gap-4">
+          <div className="mb-3 bg-blue-300 p-6 md:mb-0">
+            Card Image
+          </div>
+          <div>
+            <h5 className="text-xl font-bold">
+              Course Card
+            </h5>
+            <p className="mt-2">
+              This card stacks on smaller screens and becomes
+              a row on larger screens.
+            </p>
+          </div>
         </div>
 
         <h4>On my own</h4>
@@ -199,7 +204,9 @@ export default function TailwindSamples() {
       </section>
 
       <section>
-        <h3 className="text-xl font-semibold">Blurs and Filters</h3>
+        <h3 className="text-xl font-semibold">
+          Blurs and Filters
+        </h3>
 
         <div className="flex flex-wrap gap-4">
           <div className="bg-blue-300 p-4 text-black blur-sm">
