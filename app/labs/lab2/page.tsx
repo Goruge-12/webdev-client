@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import "./index.css";
 import ForegroundColors from "./ForegroundColors";
 import BackgroundColors from "./BackgroundColors";
@@ -16,7 +17,6 @@ import GridLayout from "./GridLayout";
 import Flex from "./Flex";
 import MediaQueriesDemo from "./MediaQueriesDemo";
 import ReactIconsSampler from "./ReactIconsSampler";
-import TailwindSamples from "./tailwind/TailwindSamples";
 
 export default function Lab2() {
   return (
@@ -127,14 +127,11 @@ export default function Lab2() {
       <Corners />
       <Dimensions />
       <Display />
-
       <Positions />
 
       <div id="wd-css-fixed-position">
         <h3>Fixed position</h3>
-        <p>
-          This box stays in the same place when scrolling.
-        </p>
+        <p>This box stays in the same place when scrolling.</p>
         <div className="wd-css-position-fixed">
           Fixed position
         </div>
@@ -146,7 +143,13 @@ export default function Lab2() {
       <Flex />
       <MediaQueriesDemo />
       <ReactIconsSampler />
-      <TailwindSamples />
+
+      <hr />
+
+      <h3>Tailwind CSS</h3>
+      <Link href="/labs/lab2/tailwind">
+        Tailwind CSS Examples
+      </Link>
     </div>
   );
 }
