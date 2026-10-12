@@ -1,0 +1,68 @@
+/* Kambaz layout */
+.wd-kambaz-layout { display: flex; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; color: #242424; background: white; }
+.wd-kambaz-layout * { box-sizing: border-box; }
+#wd-kambaz-navigation { width: 110px; flex-shrink: 0; background: #151515; display: flex; flex-direction: column; text-align: center; }
+#wd-kambaz-navigation h3 { color: white; font-size: 18px; margin: 20px 0; }
+#wd-kambaz-navigation a { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 5px; color: white; text-decoration: none; font-size: 13px; }
+#wd-kambaz-navigation a svg { color: #d41f35; font-size: 25px; }
+#wd-kambaz-navigation a:hover { background: #333; }
+.wd-kambaz-content { flex: 1; min-width: 0; padding: 24px; }
+.wd-kambaz-content h1, .wd-kambaz-content h2, .wd-kambaz-content h3 { color: #333; }
+.wd-kambaz-content button, .wd-kambaz-content select { cursor: pointer; padding: 8px 12px; border: 1px solid #bbb; border-radius: 4px; background: #f5f5f5; color: #222; }
+.wd-kambaz-content input, .wd-kambaz-content textarea { padding: 9px 12px; border: 1px solid #aaa; border-radius: 4px; max-width: 100%; }
+.wd-kambaz-content a { color: #c41e3a; }
+/* Dashboard */
+#wd-dashboard { max-width: 1200px; }
+#wd-dashboard-title { font-size: 28px; }
+#wd-dashboard-published { font-size: 21px; }
+#wd-dashboard-courses { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 22px; }
+.wd-dashboard-course { width: 260px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; background: white; box-shadow: 0 2px 6px #00000012; }
+.wd-dashboard-course-link { display: block; color: #222 !important; text-decoration: none; }
+.wd-dashboard-course-link img { width: 100%; height: 145px; object-fit: cover; }
+.wd-dashboard-course-link > div { padding: 14px; }
+.wd-dashboard-course-link h5 { font-size: 17px; margin: 0 0 8px; }
+.wd-dashboard-course-title { font-size: 14px; margin: 0 0 16px; color: #555; }
+.wd-dashboard-course-link button { background: #c41e3a; color: white; border: 0; }
+/* Course and account sidebars */
+.wd-course-layout, .wd-account-layout { display: flex; gap: 25px; align-items: flex-start; }
+#wd-courses-navigation, #wd-account-navigation { flex: 0 0 165px; display: flex; flex-direction: column; gap: 4px; }
+#wd-courses-navigation h3, #wd-account-navigation h3 { font-size: 18px; margin: 0 0 12px; }
+#wd-courses-navigation a, #wd-account-navigation a { padding: 10px 12px; text-decoration: none; border-left: 3px solid transparent; color: #b11c34; }
+#wd-courses-navigation a:hover, #wd-account-navigation a:hover { background: #f4f4f4; border-left-color: #c41e3a; }
+.wd-course-content, .wd-account-content { flex: 1; min-width: 0; }
+/* Modules and lessons */
+#wd-modules, #wd-modules ul { padding-left: 0; list-style: none; }
+#wd-modules { margin-top: 20px; border: 1px solid #ddd; }
+#wd-modules .wd-module { margin: 0 0 15px; border-bottom: 1px solid #ddd; }
+#wd-modules .wd-module > .wd-title { padding: 16px; font-weight: bold; background: #e6e6e6; border-left: 5px solid #b11c34; }
+#wd-modules .wd-lessons { margin: 0; }
+#wd-modules .wd-lesson > .wd-title { display: block; padding: 12px 18px; background: #f7f7f7; font-weight: bold; border-bottom: 1px solid #ddd; }
+#wd-modules .wd-content-item { padding: 12px 26px; border-bottom: 1px solid #e5e5e5; }
+#wd-home { display: flex; align-items: flex-start; gap: 25px; }
+.wd-home-modules { flex: 1; min-width: 0; }
+.wd-home-status { flex: 0 0 240px; }
+#wd-course-status { padding: 15px; background: #fafafa; border: 1px solid #ddd; border-radius: 5px; }
+#wd-course-status h2 { font-size: 19px; }
+#wd-course-status button { margin-bottom: 7px; }
+/* Assignments */
+#wd-assignments { max-width: 1050px; }
+#wd-assignments-title { background: #e8e8e8; padding: 14px; border: 1px solid #ccc; border-left: 5px solid #b11c34; }
+#wd-assignment-list { list-style: none; padding: 0; border: 1px solid #ddd; }
+.wd-assignment-list-item { padding: 18px; border-bottom: 1px solid #ddd; }
+.wd-assignment-link { font-weight: bold; text-decoration: none; }
+.wd-assignment-list-item span { display: inline-block; margin-top: 8px; font-size: 13px; color: #555; }
+#wd-assignments-editor { max-width: 900px; }
+#wd-assignments-editor label { font-weight: 600; }
+#wd-assignments-editor #wd-name, #wd-assignments-editor #wd-description { width: 100%; }
+#wd-assignments-editor table { border-spacing: 12px; }
+/* Account */
+#wd-signin-screen, #wd-signup-screen, #wd-profile-screen { max-width: 440px; }
+#wd-signin-screen input, #wd-signup-screen input, #wd-profile-screen input, #wd-profile-screen select { display: block; width: 100%; margin: 10px 0; }
+#wd-signin-btn, #wd-signup-btn { display: block; text-align: center; background: #c41e3a; color: white !important; text-decoration: none; padding: 12px; border-radius: 4px; margin: 14px 0; }
+/* People */
+.wd-people-toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+.wd-people-table { width: 100%; border-collapse: collapse; }
+.wd-people-table th, .wd-people-table td { padding: 13px; border-bottom: 1px solid #ddd; text-align: left; }
+.wd-people-table th { background: #f2f2f2; }
+@media (max-width: 850px) { .wd-home-status { display: none; } .wd-course-layout, .wd-account-layout { gap: 12px; } #wd-courses-navigation, #wd-account-navigation { flex-basis: 115px; } }
+@media (max-width: 600px) { #wd-kambaz-navigation { width: 75px; } #wd-kambaz-navigation h3 { font-size: 13px; } #wd-kambaz-navigation a { font-size: 11px; } .wd-kambaz-content { padding: 12px; } #wd-courses-navigation, #wd-account-navigation { flex-basis: 90px; font-size: 12px; } #wd-dashboard-courses { gap: 12px; } .wd-dashboard-course { width: min(100%, 280px); } }

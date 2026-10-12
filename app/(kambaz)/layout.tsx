@@ -1,22 +1,12 @@
 import { ReactNode } from "react";
 import KambazNavigation from "./Navigation";
+import "./kambaz.css";
 
-export default function KambazLayout({
-  children,
-}: Readonly<{ children: ReactNode }>) {
+export default function KambazLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <table>
-      <tbody>
-        <tr>
-          <td valign="top">
-            <KambazNavigation />
-          </td>
-
-          <td valign="top">
-            {children}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="wd-kambaz-layout">
+      <KambazNavigation />
+      <main className="wd-kambaz-content">{children}</main>
+    </div>
   );
 }
