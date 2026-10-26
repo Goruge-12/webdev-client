@@ -1,6 +1,19 @@
-const add = (a: number, b: number) => a + b;
-
-const mathObject = { add };
-
-export default mathObject;
-export { add };
+export function add(a: number, b: number): number {
+  return a + b;
+}
+export function subtract(a: number, b: number): number {
+  return a - b;
+}
+export function multiply(a: number, b: number): number {
+  return a * b;
+}
+export function divide(a: number, b: number): number {
+  return a / b;
+}
+const Math = {
+  add,
+  subtract,
+  multiply,
+  divide,
+};
+export default Math;
