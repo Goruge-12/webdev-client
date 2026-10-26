@@ -1,3 +1,4 @@
+
 [
   {
     "_id": "1234",
@@ -19,5 +20,12 @@
     "number": "CS3456",
     "description": "NoSQL Databases",
     "image": "/images/mongodb.jpg"
+  },
+  {
+    "_id": "RS101",
+    "name": "Rocket Propulsion",
+    "number": "RS101",
+    "description": "Introduction to Rocket Propulsion",
+    "image": "/images/reactjs.jpg"
   }
 ]
