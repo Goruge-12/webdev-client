@@ -4,9 +4,9 @@ import Add from "./Add";
 import ClientExamples from "./ClientExamples";
 import ServerInformation from "./ServerInformation";
 import TodoList from "./todos/TodoList";
-import mathObject from "./Math";
+import mathObject from "./math";
 import * as namespace from "./mathFunctions";
-import { add as namedAdd } from "./Math";
+import { add as namedAdd } from "./math";
 import "./index.css";
 
 const house = {

@@ -1,2 +1,2 @@
-export { default } from "./Math";
-export { add } from "./Math";
+export { default } from "./math";
+export { add } from "./math";

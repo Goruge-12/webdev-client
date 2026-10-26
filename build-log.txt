@@ -1,0 +1,50 @@
+
+> a1@0.1.0 build
+> next build
+
+▲ Next.js 16.3.6 (Turbopack)
+✓ Running next.config.ts took 10ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 306ms
+  Running TypeScript ...
+  Finished TypeScript in 499ms ...
+  Collecting page data using 13 workers ...
+  Generating static pages using 13 workers (0/16) ...
+  Generating static pages using 13 workers (4/16) 
+  Generating static pages using 13 workers (8/16) 
+  Generating static pages using 13 workers (12/16) 
+✓ Generating static pages using 13 workers (16/16) in 156ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /account
+├ ○ /account/profile
+├ ○ /account/signin
+├ ○ /account/signup
+├ ƒ /courses/[cid]/assignments
+├ ƒ /courses/[cid]/assignments/[aid]
+├ ƒ /courses/[cid]/grades
+├ ƒ /courses/[cid]/home
+├ ƒ /courses/[cid]/modules
+├ ƒ /courses/[cid]/people
+├ ƒ /courses/[cid]/people/table
+├ ƒ /courses/[cid]/piazza
+├ ƒ /courses/[cid]/quizzes
+├ ƒ /courses/[cid]/zoom
+├ ○ /dashboard
+├ ○ /labs
+├ ○ /labs/lab1
+├ ○ /labs/lab2
+├ ○ /labs/lab2/tailwind
+├ ○ /labs/lab3
+├ ƒ /labs/lab3/add/[a]/[b]
+├ ○ /labs/lab4
+└ ○ /labs/lab5
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
