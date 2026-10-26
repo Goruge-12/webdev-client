@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "1234-a1",
+    "course": "1234",
+    "title": "A1 - REACT BASICS",
+    "description": "Complete assignment 1 for React.",
+    "points": 100
+  },
+  {
+    "_id": "1234-a2",
+    "course": "1234",
+    "title": "A2 - REACT PRACTICE",
+    "description": "Complete assignment 2 for React.",
+    "points": 100
+  },
+  {
+    "_id": "1234-a3",
+    "course": "1234",
+    "title": "A3 - REACT PROJECT",
+    "description": "Complete assignment 3 for React.",
+    "points": 100
+  },
+  {
+    "_id": "2345-a1",
+    "course": "2345",
+    "title": "A1 - NODE BASICS",
+    "description": "Complete assignment 1 for Node.",
+    "points": 100
+  },
+  {
+    "_id": "2345-a2",
+    "course": "2345",
+    "title": "A2 - NODE PRACTICE",
+    "description": "Complete assignment 2 for Node.",
+    "points": 100
+  },
+  {
+    "_id": "2345-a3",
+    "course": "2345",
+    "title": "A3 - NODE PROJECT",
+    "description": "Complete assignment 3 for Node.",
+    "points": 100
+  },
+  {
+    "_id": "3456-a1",
+    "course": "3456",
+    "title": "A1 - MONGODB BASICS",
+    "description": "Complete assignment 1 for MongoDB.",
+    "points": 100
+  },
+  {
+    "_id": "3456-a2",
+    "course": "3456",
+    "title": "A2 - MONGODB PRACTICE",
+    "description": "Complete assignment 2 for MongoDB.",
+    "points": 100
+  },
+  {
+    "_id": "3456-a3",
+    "course": "3456",
+    "title": "A3 - MONGODB PROJECT",
+    "description": "Complete assignment 3 for MongoDB.",
+    "points": 100
+  }
+]

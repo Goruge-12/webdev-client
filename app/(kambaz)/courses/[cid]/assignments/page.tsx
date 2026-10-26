@@ -1,4 +1,6 @@
+
 import AssignmentItem from "./AssignmentItem";
+import { assignments } from "../../../database";
 
 export default async function Assignments({
   params,
@@ -6,6 +8,10 @@ export default async function Assignments({
   params: Promise<{ cid: string }>;
 }) {
   const { cid } = await params;
+
+  const courseAssignments = assignments.filter(
+    (assignment) => assignment.course === cid
+  );
 
   return (
     <div id="wd-assignments">
@@ -28,26 +34,15 @@ export default async function Assignments({
       </h3>
 
       <ul id="wd-assignment-list">
-        <AssignmentItem
-          cid={cid}
-          aid="123"
-          title="A1 - ENV + HTML"
-          details="Multiple Modules | Not available until May 6 at 12:00am | Due May 13 at 11:59pm | 100 pts"
-        />
-
-        <AssignmentItem
-          cid={cid}
-          aid="124"
-          title="A2 - CSS + TAILWIND"
-          details="Multiple Modules | Not available until May 13 at 12:00am | Due May 20 at 11:59pm | 100 pts"
-        />
-
-        <AssignmentItem
-          cid={cid}
-          aid="125"
-          title="A3 - JAVASCRIPT + REACT"
-          details="Multiple Modules | Not available until May 20 at 12:00am | Due May 27 at 11:59pm | 100 pts"
-        />
+        {courseAssignments.map((assignment) => (
+          <AssignmentItem
+            key={assignment._id}
+            cid={cid}
+            aid={assignment._id}
+            title={assignment.title}
+            details="Multiple Modules | 100 pts"
+          />
+        ))}
       </ul>
     </div>
   );

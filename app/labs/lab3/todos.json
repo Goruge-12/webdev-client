@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Read Chapter 3",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "title": "Finish Lab 3",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "title": "Test Kambaz",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "title": "Deploy a3 to Vercel",
+    "completed": false
+  }
+]

@@ -1,7 +1,19 @@
+
 import Module from "./module";
 import Lesson from "./lesson";
+import { modules } from "../../../database";
 
-export default function Modules() {
+export default async function Modules({
+  params,
+}: {
+  params: Promise<{ cid: string }>;
+}) {
+  const { cid } = await params;
+
+  const courseModules = modules.filter(
+    (module) => module.course === cid
+  );
+
   return (
     <div>
       <button>Collapse All</button>{" "}
@@ -14,53 +26,15 @@ export default function Modules() {
       <button>+ Module</button>
 
       <ul id="wd-modules">
-        <Module title="Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda">
-          <Lesson title="LEARNING OBJECTIVES">
-            <li className="wd-content-item">
-              Introduction to the course
-            </li>
-            <li className="wd-content-item">
-              Learn what is Web Development
-            </li>
-          </Lesson>
-
-          <Lesson title="READING">
-            <li className="wd-content-item">
-              Full Stack Developer - Chapter 1 - Introduction
-            </li>
-            <li className="wd-content-item">
-              Full Stack Developer - Chapter 2 - Creating User Interfaces
-            </li>
-          </Lesson>
-
-          <Lesson title="SLIDES">
-            <li className="wd-content-item">
-              Introduction to Web Development
-            </li>
-            <li className="wd-content-item">
-              Creating an HTTP server with Node.js
-            </li>
-            <li className="wd-content-item">
-              Creating a React Application
-            </li>
-          </Lesson>
-        </Module>
-
-        <Module title="Week 2">
-          <Lesson title="LEARNING OBJECTIVES">
-            <li className="wd-content-item">
-              Learn how to create user interfaces with HTML
-            </li>
-          </Lesson>
-        </Module>
-
-        <Module title="Week 3">
-          <Lesson title="LEARNING OBJECTIVES">
-            <li className="wd-content-item">
-              CSS Styling
-            </li>
-          </Lesson>
-        </Module>
+        {courseModules.map((module) => (
+          <Module key={module._id} title={module.name}>
+            <Lesson title="LEARNING OBJECTIVES">
+              <li className="wd-content-item">
+                {module.name}
+              </li>
+            </Lesson>
+          </Module>
+        ))}
       </ul>
     </div>
   );

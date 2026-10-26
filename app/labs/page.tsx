@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 export default function Labs() {
@@ -20,21 +19,15 @@ export default function Labs() {
       <ul>
         {/* Book */}
         <li>
-          <Link href="/labs/lab1">
-            Lab 1: HTML Examples
-          </Link>
+          <Link href="/labs/lab1">Lab 1: HTML Examples</Link>
         </li>
 
         <li>
-          <Link href="/labs/lab2">
-            Lab 2
-          </Link>
+          <Link href="/labs/lab2">Lab 2</Link>
         </li>
 
         <li>
-          <Link href="/labs/lab3">
-            Lab 3: JavaScript Fundamentals
-          </Link>
+          <Link href="/labs/lab3">Lab 3: JavaScript Fundamentals</Link>
         </li>
 
         {/* On my own */}
@@ -46,15 +39,11 @@ export default function Labs() {
 
         {/* With AI */}
         <li>
-          <Link href="/labs/lab5">
-            Lab 5
-          </Link>
+          <Link href="/labs/lab5">Lab 5</Link>
         </li>
 
         <li>
-          <Link href="/">
-            Kambaz
-          </Link>
+          <Link href="/dashboard">Kambaz</Link>
         </li>
       </ul>
     </div>

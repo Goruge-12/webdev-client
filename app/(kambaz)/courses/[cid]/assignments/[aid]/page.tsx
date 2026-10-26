@@ -1,11 +1,17 @@
+
 import Link from "next/link";
+import { assignments } from "../../../../database";
 
 export default async function AssignmentEditor({
   params,
 }: {
   params: Promise<{ cid: string; aid: string }>;
 }) {
-  const { cid } = await params;
+  const { cid, aid } = await params;
+
+  const assignment = assignments.find(
+    (item) => item._id === aid && item.course === cid
+  );
 
   return (
     <div id="wd-assignments-editor">
@@ -15,7 +21,7 @@ export default async function AssignmentEditor({
       <br />
       <input
         id="wd-name"
-        defaultValue="A1 - ENV + HTML"
+        defaultValue={assignment?.title ?? ""}
       />
 
       <br />

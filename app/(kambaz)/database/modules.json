@@ -1,0 +1,137 @@
+[
+  {
+    "_id": "1234-m1",
+    "course": "1234",
+    "name": "Week 1 - React Introduction",
+    "lessons": [
+      {
+        "_id": "1234-m1-l1",
+        "name": "React lesson 1"
+      },
+      {
+        "_id": "1234-m1-l2",
+        "name": "React exercises 1"
+      }
+    ]
+  },
+  {
+    "_id": "1234-m2",
+    "course": "1234",
+    "name": "Week 2 - React Practice",
+    "lessons": [
+      {
+        "_id": "1234-m2-l1",
+        "name": "React lesson 2"
+      },
+      {
+        "_id": "1234-m2-l2",
+        "name": "React exercises 2"
+      }
+    ]
+  },
+  {
+    "_id": "1234-m3",
+    "course": "1234",
+    "name": "Week 3 - React Project",
+    "lessons": [
+      {
+        "_id": "1234-m3-l1",
+        "name": "React lesson 3"
+      },
+      {
+        "_id": "1234-m3-l2",
+        "name": "React exercises 3"
+      }
+    ]
+  },
+  {
+    "_id": "2345-m1",
+    "course": "2345",
+    "name": "Week 1 - Node Introduction",
+    "lessons": [
+      {
+        "_id": "2345-m1-l1",
+        "name": "Node lesson 1"
+      },
+      {
+        "_id": "2345-m1-l2",
+        "name": "Node exercises 1"
+      }
+    ]
+  },
+  {
+    "_id": "2345-m2",
+    "course": "2345",
+    "name": "Week 2 - Node Practice",
+    "lessons": [
+      {
+        "_id": "2345-m2-l1",
+        "name": "Node lesson 2"
+      },
+      {
+        "_id": "2345-m2-l2",
+        "name": "Node exercises 2"
+      }
+    ]
+  },
+  {
+    "_id": "2345-m3",
+    "course": "2345",
+    "name": "Week 3 - Node Project",
+    "lessons": [
+      {
+        "_id": "2345-m3-l1",
+        "name": "Node lesson 3"
+      },
+      {
+        "_id": "2345-m3-l2",
+        "name": "Node exercises 3"
+      }
+    ]
+  },
+  {
+    "_id": "3456-m1",
+    "course": "3456",
+    "name": "Week 1 - MongoDB Introduction",
+    "lessons": [
+      {
+        "_id": "3456-m1-l1",
+        "name": "MongoDB lesson 1"
+      },
+      {
+        "_id": "3456-m1-l2",
+        "name": "MongoDB exercises 1"
+      }
+    ]
+  },
+  {
+    "_id": "3456-m2",
+    "course": "3456",
+    "name": "Week 2 - MongoDB Practice",
+    "lessons": [
+      {
+        "_id": "3456-m2-l1",
+        "name": "MongoDB lesson 2"
+      },
+      {
+        "_id": "3456-m2-l2",
+        "name": "MongoDB exercises 2"
+      }
+    ]
+  },
+  {
+    "_id": "3456-m3",
+    "course": "3456",
+    "name": "Week 3 - MongoDB Project",
+    "lessons": [
+      {
+        "_id": "3456-m3-l1",
+        "name": "MongoDB lesson 3"
+      },
+      {
+        "_id": "3456-m3-l2",
+        "name": "MongoDB exercises 3"
+      }
+    ]
+  }
+]
