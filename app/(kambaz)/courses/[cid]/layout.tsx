@@ -1,25 +1,22 @@
 
-import { ReactNode } from "react";
-import CourseNavigation from "./Navigation";
-import CourseHeading from "./CourseHeading";
+"use client";
 
-export default async function CourseLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
-  params: Promise<{ cid: string }>;
-}) {
-  const { cid } = await params;
+import { usePathname } from "next/navigation";
+import { courses } from "../../database";
+
+export default function CourseHeading({ cid }: { cid: string }) {
+  const pathname = usePathname();
+  const course = courses.find((course) => course._id === cid);
+
+  const section = pathname.split("/")[3] || "home";
+  const sectionName =
+    section.charAt(0).toUpperCase() + section.slice(1);
 
   return (
-    <div className="wd-course-layout">
-      <CourseNavigation cid={cid} />
-
-      <section className="wd-course-content">
-        <CourseHeading cid={cid} />
-        {children}
-      </section>
+    <div id="wd-course-header">
+      <h2 id="wd-course-heading">
+        {course?.name || "Course"} / {sectionName}
+      </h2>
     </div>
   );
 }

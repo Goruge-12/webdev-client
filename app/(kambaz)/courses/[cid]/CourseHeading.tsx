@@ -6,7 +6,6 @@ import { courses } from "../../database";
 
 export default function CourseHeading({ cid }: { cid: string }) {
   const pathname = usePathname();
-
   const course = courses.find((course) => course._id === cid);
 
   const section = pathname.split("/")[3] || "home";
@@ -16,7 +15,7 @@ export default function CourseHeading({ cid }: { cid: string }) {
   return (
     <div id="wd-course-header">
       <h2 id="wd-course-heading">
-        {course ? course.name : "Course"} &gt; {sectionName}
+        {course?.name || "Course"} / {sectionName}
       </h2>
     </div>
   );
