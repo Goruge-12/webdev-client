@@ -14,8 +14,10 @@ export default function CourseHeading({ cid }: { cid: string }) {
     section.charAt(0).toUpperCase() + section.slice(1);
 
   return (
-    <h2 id="wd-course-heading">
-      {course ? course.name : "Course"} &gt; {sectionName}
-    </h2>
+    <div id="wd-course-header">
+      <h2 id="wd-course-heading">
+        {course ? course.name : "Course"} &gt; {sectionName}
+      </h2>
+    </div>
   );
 }
