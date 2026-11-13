@@ -1,4 +1,22 @@
+
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useAccount } from "../AccountContext";
+
 export default function Profile() {
+  const router = useRouter();
+  const { currentUser, signout } = useAccount();
+
+  if (!currentUser) {
+    return null;
+  }
+
+  const handleSignout = () => {
+    signout();
+    router.push("/account/signin");
+  };
+
   return (
     <div id="wd-profile-screen">
       <h3>Profile</h3>
@@ -6,7 +24,8 @@ export default function Profile() {
       <input
         id="wd-username"
         placeholder="username"
-        defaultValue="JoeSwanson12"
+        value={currentUser.username}
+        readOnly
       />
       <br />
 
@@ -14,28 +33,32 @@ export default function Profile() {
         id="wd-password"
         placeholder="password"
         type="password"
-        defaultValue="2134"
+        value={currentUser.password}
+        readOnly
       />
       <br />
 
       <input
         id="wd-firstname"
         placeholder="First Name"
-        defaultValue="Joe"
+        value={currentUser.firstName}
+        readOnly
       />
       <br />
 
       <input
         id="wd-lastname"
         placeholder="Last Name"
-        defaultValue="Swanson"
+        value={currentUser.lastName}
+        readOnly
       />
       <br />
 
       <input
         id="wd-dob"
         type="date"
-        defaultValue="2026-09-27"
+        value={currentUser.dob ?? ""}
+        readOnly
       />
       <br />
 
@@ -43,18 +66,27 @@ export default function Profile() {
         id="wd-email"
         type="email"
         placeholder="Email"
-        defaultValue="student@northeastern.com"
+        value={currentUser.email ?? ""}
+        readOnly
       />
       <br />
 
-      <select id="wd-role" defaultValue="FACULTY">
+      <select
+        id="wd-role"
+        value={currentUser.role ?? "STUDENT"}
+        disabled
+      >
         <option value="FACULTY">Faculty</option>
         <option value="STUDENT">Student</option>
         <option value="TA">TA</option>
       </select>
       <br />
 
-      <button id="wd-signout-btn">
+      <button
+        type="button"
+        id="wd-signout-btn"
+        onClick={handleSignout}
+      >
         Sign out
       </button>
     </div>

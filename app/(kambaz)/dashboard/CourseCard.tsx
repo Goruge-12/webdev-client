@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -6,11 +7,15 @@ export default function CourseCard({
   title,
   subtitle,
   image,
+  onEdit,
+  onDelete,
 }: {
   id: string;
   title: string;
   subtitle: string;
   image: string;
+  onEdit?: () => void;
+  onDelete?: () => void;
 }) {
   return (
     <div className="wd-dashboard-course">
@@ -30,9 +35,27 @@ export default function CourseCard({
           <p className="wd-dashboard-course-title">
             {subtitle}
           </p>
-          <button type="button">Go</button>
+          <span className="btn btn-primary">Go</span>
         </div>
       </Link>
+
+      <div className="mt-2">
+        <button
+          type="button"
+          className="btn btn-warning me-2"
+          onClick={onEdit}
+        >
+          Edit
+        </button>
+
+        <button
+          type="button"
+          className="btn btn-danger"
+          onClick={onDelete}
+        >
+          Delete
+        </button>
+      </div>
     </div>
   );
 }

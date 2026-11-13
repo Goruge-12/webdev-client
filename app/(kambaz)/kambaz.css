@@ -66,3 +66,16 @@
 .wd-people-table th { background: #f2f2f2; }
 @media (max-width: 850px) { .wd-home-status { display: none; } .wd-course-layout, .wd-account-layout { gap: 12px; } #wd-courses-navigation, #wd-account-navigation { flex-basis: 115px; } }
 @media (max-width: 600px) { #wd-kambaz-navigation { width: 75px; } #wd-kambaz-navigation h3 { font-size: 13px; } #wd-kambaz-navigation a { font-size: 11px; } .wd-kambaz-content { padding: 12px; } #wd-courses-navigation, #wd-account-navigation { flex-basis: 90px; font-size: 12px; } #wd-dashboard-courses { gap: 12px; } .wd-dashboard-course { width: min(100%, 280px); } }
+/* Course breadcrumb */
+#wd-course-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+#wd-course-heading {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
